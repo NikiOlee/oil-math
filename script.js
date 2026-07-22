@@ -42,7 +42,7 @@ function calculate() {
   const totalLiter = priceLiter + deliveryLiter;
 
   if (resPriceTon)
-    resPriceTon.innerText = Math.ceil(priceTon).toLocaleString("ru-RU");
+    resPriceTon.innerText = Math.floor(priceTon).toLocaleString("ru-RU");
   if (resDelivTon)
     resDelivTon.innerText = Math.floor(deliveryTon).toLocaleString("ru-RU");
   if (resTotalTon)
