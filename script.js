@@ -44,7 +44,7 @@ function calculate() {
   if (resPriceTon)
     resPriceTon.innerText = Math.ceil(priceTon).toLocaleString("ru-RU");
   if (resDelivTon)
-    resDelivTon.innerText = Math.ceil(deliveryTon).toLocaleString("ru-RU");
+    resDelivTon.innerText = Math.floor(deliveryTon).toLocaleString("ru-RU");
   if (resTotalTon)
     resTotalTon.innerText = Math.ceil(totalTon).toLocaleString("ru-RU");
 
