@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="diploma.jfif" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+    <title>Калькулятор рентабельности</title>
+  </head>
+  <body>
+    <h1>Калькулятор рентабельности поставок</h1>
+
+    <div class="container">
+      <!-- Поля ввода -->
+      <label class="input-group">
+        <p>Ст-ть денег (% в день):</p>
+        <input type="number" value="0.08" step="0.01" id="1" />
+      </label>
+
+      <label class="input-group">
+        <p>Мин. наценка (%):</p>
+        <input type="number" value="1.0" step="0.1" id="2" />
+      </label>
+
+      <label class="input-group">
+        <p>Доходность (% в год):</p>
+        <input type="number" value="50.0" step="1" id="3" />
+      </label>
+
+      <label class="input-group">
+        <p>Отсрочка (дни):</p>
+        <input type="number" value="10" id="4" />
+      </label>
+
+      <label class="input-group">
+        <p>Плотность (кг/л):</p>
+        <input type="number" value="0.835" step="0.001" id="5" />
+      </label>
+
+      <label class="input-group">
+        <p>Цена доставки (руб/л):</p>
+        <input type="number" value="3.3" step="0.1" id="6" />
+      </label>
+
+      <label class="input-group">
+        <p>Цена закупки (руб/тонна):</p>
+        <input type="number" value="110000" step="1000" id="7" />
+      </label>
+    </div>
+
+    <button id="calcBtn" type="button">Рассчитать</button>
+
+    <div class="table-container">
+      <table cellspacing="0" border="0">
+        <thead>
+          <tr>
+            <th>Ед.изм</th>
+            <th class="right">Цена</th>
+            <th class="right">Доставка</th>
+            <th class="right">ИТОГО</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>руб/тонна</td>
+            <td class="right"><span id="resPriceTon">0</span></td>
+            <td class="right"><span id="resDelivTon">0</span></td>
+            <td class="right bold"><span id="resTotalTon">0</span></td>
+          </tr>
+          <tr>
+            <td>руб/литр</td>
+            <td class="right"><span id="resPriceLiter">0</span></td>
+            <td class="right"><span id="resDelivLiter">0</span></td>
+            <td class="right bold"><span id="resTotalLiter">0</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
