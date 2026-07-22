@@ -24,6 +24,13 @@ h1 {
   color: #333;
 }
 
+@media (max-width: 550px) {
+  h1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
 .container {
   width: 100%;
   max-width: 300px;
@@ -124,4 +131,10 @@ table th.right {
 
 table td.bold {
   font-weight: 700;
+}
+.right.bold {
+  font-size: 20px;
+}
+#resTotalLiter {
+  font-size: 30px;
 }
