@@ -2,7 +2,7 @@ const themeBtn = document.querySelector('.themeBtn');
 
 if (localStorage.getItem('theme') === 'dark') {
   document.body.classList.add('dark-theme');
-  themeBtn.textContent = '☀️';
+  themeBtn.textContent = '🌞';
 }
 
 themeBtn.addEventListener('click', () => {
