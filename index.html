@@ -12,23 +12,25 @@
     <button class="themeBtn">🌝</button>
 
     <div class="container">
-      <!-- Основные поля ввода -->
-      <label class="input-group">
-        <p>Отсрочка (дни):</p>
-        <input type="number" value="17" id="4" />
-      </label>
-
-      <label class="input-group">
-        <p>Цена доставки (руб/л):</p>
-        <input type="number" value="3.3" step="0.1" id="6" />
-      </label>
-
       <label class="input-group">
         <p>Цена закупки (руб/тонна):</p>
         <input type="number" value="110000" step="1000" id="7" />
       </label>
 
-      <!-- Скрытые дополнительные поля -->
+      <label class="input-group">
+        <p>Отсрочка (дни):</p>
+        <input type="number" value="17" id="4" />
+      </label>
+      <label class="input-group">
+        <p>Плотность (кг/л):</p>
+        <input type="number" value="0.835" step="0.001" id="5" />
+      </label>
+      <label class="input-group">
+        <p>Цена доставки (руб/л):</p>
+        <input type="number" value="3.3" step="0.1" id="6" />
+      </label>
+
+      <!-- Скрытые дополнительные поля (осталось 3) -->
       <details class="advanced-settings">
         <summary>Дополнительные параметры</summary>
         <div class="advanced-container">
@@ -46,12 +48,9 @@
             <p>Доходность (% в год):</p>
             <input type="number" value="70.0" step="1" id="3" />
           </label>
-
-          <label class="input-group">
-            <p>Плотность (кг/л):</p>
-            <input type="number" value="0.835" step="0.001" id="5" />
-          </label>
         </div>
+      </details>
+    </div>
       </details>
     </div>
 
