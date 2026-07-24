@@ -1,4 +1,4 @@
-# Считалка стоимости топлива <img src="diploma.jfif" width="30" height="30" alt="Transoil logo">
+# Считалка стоимости топлива <img src="favicon.ico" width="30" height="30" alt="Transoil logo">
 Это считалка стоимости **топлива** или **нефти** или *еще чего я не знаю*. :neutral_face:
 ___
 #### Если хотите ссылку на страницу то она в описании а также вот: [nikiolee.github.io](https://nikiolee.github.io/oil-math/)
